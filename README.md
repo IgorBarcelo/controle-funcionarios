@@ -1,80 +1,57 @@
-# Projeto de Gerenciamento de Funcionários
+# Controle de Funcionários
 
-## Descrição
+Este é um projeto em Java puro que realiza a gestão de uma lista de funcionários com diversas operações, como aumento de salário, ordenação, agrupamento por função, cálculo de aniversariantes, entre outras.
 
-Este projeto é um exercício prático de programação em Java que implementa um sistema de gerenciamento de funcionários para uma indústria. Ele permite a manipulação de uma lista de funcionários, incluindo operações como inserção, remoção, atualização de salário, agrupamento por função e várias outras funcionalidades de consulta e formatação.
+## 📸 Demonstração
 
-## Requisitos
+![Demo](./public/demo.png)
 
-- Java 8 ou superior
+## Funcionalidades
 
-## Estrutura do Projeto
+- Cadastro inicial de 10 funcionários
+- Remoção de funcionário por nome
+- Impressão detalhada dos funcionários
+- Aumento de 10% nos salários
+- Agrupamento dos funcionários por função
+- Listagem de aniversariantes nos meses de Outubro e Dezembro
+- Identificação do funcionário mais velho
+- Ordenação alfabética dos nomes
+- Cálculo do total dos salários
+- Cálculo de quantos salários mínimos cada funcionário recebe
 
-O projeto é composto pelas seguintes classes:
+## Tecnologias
 
-1. **Pessoa**
-   - Atributos: `nome` (String), `dataNascimento` (LocalDate)
-   - Métodos: Getters e Setters
+- Java 8+
+- API de datas (`java.time`)
+- `BigDecimal` para cálculos de precisão
+- `Stream API` para manipulação de coleções
 
-2. **Funcionario**
-   - Herda da classe `Pessoa`
-   - Atributos: `salario` (BigDecimal), `funcao` (String)
-   - Métodos: Getters e Setters
+## Como executar
 
-3. **Principal**
-   - Classe principal para execução do programa
-   - Funcionalidades:
-     - Inserir funcionários
-     - Remover um funcionário específico
-     - Imprimir todos os funcionários com formatação específica
-     - Atualizar salários dos funcionários
-     - Agrupar funcionários por função
-     - Imprimir aniversariantes de meses específicos
-     - Identificar o funcionário mais velho
-     - Ordenar e imprimir funcionários por ordem alfabética
-     - Calcular e imprimir o total dos salários
-     - Calcular e imprimir quantos salários mínimos cada funcionário recebe
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/IgorBarcelo/controle-funcionarios.git
+   cd controle-funcionarios
+   ```
 
-## Execução
+2. Compile o projeto:
+   ```bash
+   javac Principal.java Funcionario.java
+   ```
 
-### Inserir Funcionários
+3. Execute o projeto:
+   ```bash
+   java Principal
+   ```
 
-Os funcionários são inseridos na mesma ordem e com as mesmas informações especificadas na tabela do exercício.
+## Estrutura dos arquivos
 
-### Remover Funcionário
+```
+controle-funcionarios/
+├── Funcionario.java
+├── Principal.java
+└── README.md
+```
 
-Remove o funcionário chamado "João" da lista.
-
-### Imprimir Funcionários
-
-Imprime todos os funcionários com as seguintes formatações:
-- Data de nascimento no formato `dd/MM/yyyy`
-- Salário no formato brasileiro com separador de milhar como ponto e decimal como vírgula
-
-### Aumentar Salários
-
-Aumenta o salário de todos os funcionários em 10%.
-
-### Agrupar por Função
-
-Agrupa os funcionários por função em um mapa, onde a chave é a função e o valor é a lista de funcionários.
-
-### Aniversariantes
-
-Imprime os funcionários que fazem aniversário nos meses 10 (Outubro) e 12 (Dezembro).
-
-### Funcionário Mais Velho
-
-Identifica e imprime o funcionário com a maior idade.
-
-### Ordenar e Imprimir por Ordem Alfabética
-
-Imprime a lista de funcionários ordenada por nome.
-
-### Total dos Salários
-
-Calcula e imprime o total dos salários de todos os funcionários.
-
-### Salários Mínimos
-
-Calcula e imprime quantos salários mínimos cada funcionário recebe, considerando o salário mínimo de R$1212.00.   
+## Créditos
+Desenvolvido por [Igor Barcelo](https://www.linkedin.com/in/igor-barcelo-631010216/)
