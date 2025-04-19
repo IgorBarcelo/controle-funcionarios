@@ -4,7 +4,7 @@ Este é um projeto em Java puro que realiza a gestão de uma lista de funcionár
 
 ## 📸 Demonstração
 
-![Demo](./public/demo.png)
+![Demo](https://github.com/IgorBarcelo/controle-funcionarios/blob/main/public/demo.png?raw=true)
 
 ## Funcionalidades
 
